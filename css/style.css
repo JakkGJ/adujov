@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+/* || RESET */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* || VARIABLES */
+
+:root {
+    /* FONTS */
+    --FF: "Nunito", sans-serif;
+    --FF-HEADINGS: "Fugaz One"cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    /* COLORS */
+    --BGCOLOR: rgb(120, 6, 6);
+    --FONT-COLOR: whitesmoke;
+    --LINK-COLOR: whitesmoke;
+    --LINK-HOVER: whitesmoke;
+    --LINK-ACTIVE: whitesmoke;
+    --BODY-BGCOLOR: #333333;
+    --BORDER-COLOR: black;
+
+    /* BORDERS */
+    --BORDERS: 1px solid var(--BORDER-COLOR);
+    --BORDER-RADIUS: 15px;
+
+    /* STANDARD PADDING */
+    --PADDING-TB: 0.25em;
+    --PADDING-SIDE: 2.5%;
+
+    /* STANDARD MARGIN */
+    --MARGIN: clamp(1em, 2vh, 1.5em) 0;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+html {
+    background-color: black;
+    color: var(--FONT-COLOR);
+    font-family: var(--FF);
+    font-size: var(--FS);
+}
+
+.header {
+    background-color: var(--BGCOLOR);
+    position: sticky;
+    top: 0;
+    box-shadow: 0 6px 5px -5px var(--BORDER-COLOR);
+}
+
+.header-img {
+    float: left;
+    margin-left: 2.5%;
+}
+
+.header-nav {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: var(--FONT-COLOR);
+    font-weight: bold;
+}
+
+a:hover, a:focus {
+    color: antiquewhite;
+}
+
+h4 {
+    padding: var(--PADDING-SIDE);
+}
+
+p {
+    margin: var(--MARGIN);
+    padding: var(--PADDING-SIDE);
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+ul {
+    padding: 0 8%;
+}
+
+.standard-link {
+    margin: var(--MARGIN);
+    padding: var(--PADDING-SIDE);
+}
+
+.map {
+    display: block;
+    margin: auto;
+}
+
+.welcome-vid {
+    width: 100%;
+    height: auto;
+}
+
+.study-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 667px) {
+    .main {
+        padding: 0% 15%;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* .welcome-vid {
+        width: 100%;
+        min-height: 480px;
+        height: calc((9 / 16) * 100vw);
+        max-height: calc(100vh - 169px);
+    } */
+    :root {
+        /* STANDARD PADDING */
+        --PADDING-TB: 0.20em;
+
+        /* STANDARD MARGIN */
+        --MARGIN: clamp(0.5em, 1.5vh, 1em) -0.5;
+    }
+
+    .study-img {
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+}
+
+@media (orientation: landscape) {
+  .welcome-vid {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (orientation: portrait) {
+  .welcome-vid {
+    aspect-ratio: 9 / 16;
+    }
+}
