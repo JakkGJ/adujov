@@ -110,6 +110,12 @@ ul {
     padding: 0 8%;
 }
 
+footer p{
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+}
+
 .standard-link {
     margin: var(--MARGIN);
     padding: var(--PADDING-SIDE);
