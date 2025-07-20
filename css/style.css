@@ -110,8 +110,11 @@ ul {
     padding: 0 8%;
 }
 
-footer p{
+footer {
     bottom: 0;
+}
+
+footer p {
     text-align: center;
     margin: auto;
 }
