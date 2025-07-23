@@ -119,6 +119,13 @@ footer p {
     margin: auto;
 }
 
+.main-inner {
+    max-width: 75rem;
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .standard-link {
     margin: var(--MARGIN);
     padding: var(--PADDING-SIDE);
