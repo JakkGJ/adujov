@@ -11,7 +11,7 @@
 
 .header-img {
     display: block;
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
 }
 
@@ -79,7 +79,7 @@ html {
 
 .header-nav {
     display: flex;
-    height: 120px;
+    height: 100px;
     align-items: center;
     justify-content: space-evenly;
 }
